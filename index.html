@@ -964,11 +964,24 @@
 	  <div class="w3-center">
 	    <h2>Abstract</h2>
 	  </div>
-	  <p align="justify">We introduce TIDEE, an embodied agent that tides up a disordered scene based on learned commonsense object placement and room arrangement priors. TIDEE explores a home environment, detects objects that are out of their natural place, infers plausible object contexts for them, localizes such contexts in the current scene, and repositions the objects. Commonsense priors are encoded in three modules: i) visuo-semantic detectors that detect out of place objects, ii) an associative neural graph memory of objects and spatial relations that proposes plausible semantic receptacles for object repositions, and iii) a visual search network that guides the agent’s exploration for efficiently localizing the receptacle-of-interest in the current scene to reposition the object. </p>
+	  <p align="justify">We introduce TIDEE, an embodied agent that tidies up a
+        disordered scene based on learned commonsense object placement and
+        room arrangement priors. TIDEE explores a home environment, detects
+        objects that are out of their natural place, infers plausible object contexts for them, localizes such contexts in the current scene, and repositions the objects. Commonsense priors are encoded in three modules: i)
+        visuo-semantic detectors that detect out-of-place objects, ii) an associative neural graph memory of objects and spatial relations that proposes
+        plausible semantic receptacles and surfaces for object repositions, and
+        iii) a visual search network that guides the agent’s exploration for efficiently localizing the receptacle-of-interest in the current scene to reposition the object. We test TIDEE on tidying up disorganized scenes in
+        the AI2THOR simulation environment. TIDEE carries out the task directly from pixel and raw depth input without ever having observed the
+        same room beforehand, relying only on priors learned from a separate
+        set of training houses.</p>
       <br>
       <spacer type="horizontal" width="5" height="5"> </spacer>
       <br>
-      <p align="justify">We test TIDEE on tidying up disorganized scenes in the AI2THOR simulation environment. TIDEE carries out the task without ever having observed the same room beforehand, relying only on priors learned from a separate set of training houses. We evaluate performance by scoring the resulting room reorganizations using human evaluators. TIDEE out performs ablative versions of the model that do not use one or more of the commonsense priors. Moreover, we show TIDEE can successfully be instructed in natural language to follow specifications for object placement, without any additional training data. Last, on the related room rearrangement benchmark [3], TIDEE outperforms the state-of-the-art by a 7x performance margin.</p>
+      <p align="justify">Human evaluations on the resulting room reorganizations show TIDEE outperforms ablative versions of the model that
+        do not use one or more of the commonsense priors. On a related room
+        rearrangement benchmark that allows the agent to view the goal state
+        prior to rearrangement, a simplified version of our model significantly
+        outperforms a top-performing method by a large margin.</p>
 	  <hr>
 
     </section>
